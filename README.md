@@ -11,39 +11,34 @@ completes its task.
 
 Highlights the concept of nested functions and how control is passed between parent and callback functions.
 
-Promises:
+# Promises:
 
 Shows how to create and handle promises using .then(), .catch(), and .finally().
-
 Includes examples of chaining promises to perform sequential asynchronous tasks.
 
-Async/Await:
+# Async/Await:
 
 Simplifies asynchronous code by using the async and await keywords.
-
 Demonstrates how to handle asynchronous tasks in a synchronous-like manner.
 
 Key Concepts Covered:
 Callback Functions:
 
 Passing functions as arguments.
-
 Control flow between parent and callback functions.
 
-Promises:
+# Promises:
 
 States of a promise: pending, fulfilled, and rejected.
-
 Chaining promises for sequential execution.
 
-Async/Await:
+# Async/Await:
 
 Writing asynchronous code in a synchronous style.
-
 Error handling with try/catch.
 
 Example Code:
-
+```
 function parentFunction(func: () => void) {
   console.log("I am the parent function");
   func();
@@ -69,9 +64,10 @@ Washing()
   .catch((error) => {
     console.log('Machine is stopped!');
   });
-
+```
 
 Example 3
+```
 const returnMoney = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('Money returned!');
@@ -109,3 +105,4 @@ async function runWashingMachine() {
 }
 
 runWashingMachine();
+```
