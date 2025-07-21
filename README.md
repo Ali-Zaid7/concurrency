@@ -82,8 +82,8 @@ returnMoney
     console.log('Error:', error);
   });
 ```
+## Example 4
 ```
-Example 4
 const returnMoney = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('Money returned!');
