@@ -81,7 +81,8 @@ returnMoney
   .catch((error) => {
     console.log('Error:', error);
   });
-
+```
+```
 Example 4
 const returnMoney = new Promise((resolve, reject) => {
   setTimeout(() => {
